@@ -1,0 +1,48 @@
+body {
+    margin: 0;    
+}
+#canvas {
+    background-color: black;
+}
+div.control {
+    width: 50%;
+    height: 20%;
+    background-color: rgba(199, 178, 178, 0.116);
+    position: absolute;
+    color: black;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 500ms;
+}
+button#start-game-button {
+    background-color: rgba(173, 216, 230, 0.459);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    width: 80%;
+    height: 60%;
+    box-shadow: 1px 1px 10px rgba(173, 216, 230, 0.459);
+}
+button#start-game-button:active {
+    filter: brightness(0.8);
+    box-shadow: 1px 1px 2px  rgba(173, 216, 230, 0.459);
+}
+div#score {
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 20px;
+    padding: 10px;
+    font-size: xx-large;
+    opacity: 0.7;
+    font-weight: bold;
+}
