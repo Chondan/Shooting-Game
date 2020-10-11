@@ -222,6 +222,12 @@
             e.preventDefault();
             addProjectiles();
         });
+         canvas.addEventListener("touchstart", e => {
+            e.preventDefault();
+            targetX = e.touches[0].clientX;
+            targetY = e.touches[0].clientY;
+            addProjectiles();
+        });
     }
     app();
     window.addEventListener("resize", () => {
