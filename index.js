@@ -28,7 +28,7 @@
             { x: randomPosX, y: 0 - radius },
             { x: randomPosX, y: canvas.height + radius }
         ];
-        return positions[random(0, 2)];
+        return positions[random(0, 3)];
     }
     function getRandomColor() {
         const opacity = random(0.5, 1);
